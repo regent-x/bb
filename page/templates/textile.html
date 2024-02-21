@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}textile{% endblock %}
+
+{% block content %}
+<div class="textile">
+    <h2>Painting</h2>
+</div>
+<section>
+    <img src="{% static 't_acry.jpeg' %}">
+    <h4>Name</h4><p>Ojerinde olayemi</p>
+    <h4>Size</h4><P>3ft by 7ft</P>
+    <h4>Medium</h4><p>Acrylic</p>
+</section>
+<section>
+    <img src="{% static 't_embroidery.jpeg' %}">
+    <h4>Name</h4><p>Omisakin F.taiwo</p>
+    <h4>Medium</h4><p>Embroidery(wool)</p>
+    <h4>Size</h4><p>3ft by 7ft</p>
+</section>
+<section>
+    <img src="{% static 't_bead.jpeg' %}">
+    <h4>Name</h4><p>kukoyi</p>
+    <h4>Medium</h4><p>Bead on Hard Board</p>
+    <h4>Size</h4><p>3ft by 4ft</p>
+</section>
+{% endblock %}

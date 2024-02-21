@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}{% endblock %}</title>
+    <link href="{% static 'index.css' %}" rel='stylesheet' type="text/css" >
+    <link href="{% static 'favicon.ico' %}" type="image/ico" rel="shortcut icon">
+</head>
+<body>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <script type="text/javascript">
+        (function () {
+        var button = document.getElementById('toggle-menu');
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                var menu = document.getElementById('main-menu');
+                menu.classList.toggle('is-open');
+            })
+        })();
+    </script>
+</body>
+</html>

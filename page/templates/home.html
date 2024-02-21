@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Department Gallery {% endblock %}
+
+{% block content %}
+<div class="center_logo">
+    <img class='main_logo' src="../static/logo.jpg">
+</div>
+<header id="header" class="page-header">
+    <div class="title">
+        <h1 "><a style="color: #efcc83;" href="{% url "page:home" %}">Department Gallery</a></h1>
+        <div class="slogan">Bolu Ahisu's project</div>
+    </div>
+</header>
+<nav class="menu" id="main-menu" </nav>
+    <button class="menu-toggle" id="toggle-menu">
+        toggle menu
+    </button>
+    <div class="menu-dropdown">
+        <ul class="nav-menu">
+            <li><a href="{% url "page:ceramic" %}">ceramic</a></li>
+            <li><a href="{% url "page:sculpture" %}">sculpture</a></li>
+            <li><a href="{% url "page:graphics" %}">graphics</a></li>
+            <li><a href="{% url "page:textile" %}">textile</a></li>
+            <li><a href="{% url "page:painting" %}">painting</a></li>
+        </ul>
+    </div>
+</nav>
+<aside id="hero" class="hero">
+    Welcome to the department of fine art gallery collection!
+    Where we showcase case the exception talent of the students.
+</aside>
+
+<main id="main">
+    <div class="row">
+        <section class="column">
+            <h2 class="subtitle">Services</h2>
+            <div class="mini_grid"</div>
+                <div class='card' style="background-color: brown;">
+                <span class="column">
+                    <a href="{% url "page:textile" %}"><img src="./../static/textile.jpg"></a>
+                    <div class="container" style="color: white; font-size: 1.5rem"">
+                        textile
+                    </div>
+                </span>
+                </div>
+                <div class='card' style="background-color: brown;">
+                <span class="column">
+                    <a href="{% url "page:ceramic" %}"><img src="./../static/cermics.jpg"></a>
+                    <div class="container"style="color: white; font-size: 1.5rem"">
+                        ceramic
+                    </div>
+                </span>
+                <div class='card'>
+                <span class="column" style="background-color: brown;">
+                    <a href="{% url "page:painting" %}"><img src="./../static/painting.jpg"></a>
+                    <div class="container"style="color: white; font-size: 1.5rem">
+                        painting
+                    </div>
+                </span>
+                </div>
+                <div class='card' style="background-color: brown;">
+                <span class="column">
+                    <a href="{% url "page:sculpture" %}"><img src="./../static/s_metalic.jpg"></a>
+                    <div class="container"style="color: white; font-size: 1.5rem"">
+                        sculpture
+                    </div>
+                </span>
+                <div class='card' style="background-color: brown;">
+                <span class="column">
+                    <a href="{% url "page:graphics" %}"><img src="./../static/graphics.jpg"></a>
+                    <div class="container"style="color: white; font-size: 1.5rem"">
+                        graphics
+                    </div>
+                </span>
+                </div>
+        </section>
+        <section class="column">
+            <h2 class="subtitle">About</h2>
+            <p>Ahisu Boluwatife Sesede, Matric Number 183891</p>
+            <p>Computer Art project supervised by Mr.Oyeyode</p>
+        </section>
+    </div>
+</main>
+{% endblock %}

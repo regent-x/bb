@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}graphics{% endblock %}
+
+{% block content %}
+<div class="graphics">
+    <h2>Graphics</h2>
+</div>
+<section>
+   <div class="card">
+    <img src="{% static 'g_man.jpg' %}"> 
+    <div class="container">
+    <h3>untitle</h3>
+    <p>Mannequin on a Dress</p>
+</div>
+</div>
+</section>
+<section>
+    <div class="card">
+    <div class="container">
+    <img src="{% static 'lautech_clock.jpeg' %}">
+    <h3>Lautech Digital Souvenir Clock (2023)</h3>
+</div>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Ceramic{% endblock %}
+
+{% block content %}
+<div class="ceramics" >
+    <h2>Ceramics</h2>
+</div>
+<section class="card">
+    <img src="{% static 'c_moremi.jpeg' %}">
+    <div class="container">
+    <h4>Name</h3>
+    <p>Ibrahim Adedeji</p>
+    <h4>Title:</h3>
+    <p>Moremi | let there be light</p>
+    <h4>Description:</h3>
+    <p>Depict these picture to reflect how moremi stood her ground to save her people from darkness of ugbo
+    warriors</p>
+    </div>
+</section>
+<section class="card">
+    <img src="{% static 'c_engo.jpeg'%}">
+    <div class="container">
+    <h3>Name:</h3><p>Olawuyi John Damilar</p>
+    <h3>Title:</h3><p>Engobe((colour slip) on Malteser vase</p>
+    </div>
+</section>
+<section class="card">
+    <img src="{% static 'c_power.jpeg'%}">
+    <div class="container">
+    <h3>Name:</h3><p>Richard Adewale Oredola</p>
+    <h3>Title:</h3><p>Power, Unity, Selflessness</p>
+    <h3>Description:</h3><p>A lot can be done when we are United, and alot can destroy when we misapply the power</p>
+    </div>
+</section>
+<section class="card">
+    <img src="{% static 'c_ibrahim.jpeg' %}">
+    <div class="container">
+    <h3>Name:</h3><p>Ibrahim Adedeji</p>
+    <h3>Title:</h3><p>Ologbon ni olode(a hunter is a wise man).</p>
+    <h3>Description:</h3><p>Trapping and killing of animal in the bush requires a level of certain skill hence the title.</p>
+    <h4>Medium:</h4><p>Red clay</p>
+    </div>
+</section>
+<section class="card">
+    <img src="{% static 'c_opon.jpeg' %}">
+    <div class="container">
+    <h4>Name:</h4><p>Arike Alamo</p>
+    <h4>Title:</h4><p>Opon ifa</p>
+    <h4>Description:</h4><p>This is an assemblage pot called Opon ifa. Opon ifa is an ancient sacrilege tray used for divination by the yoruba to make consultation and to get sollutions to problems</p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Painting{% endblock %}
+
+
+{% block content %}
+<div class="painting">
+    <h2 style="color: brown;">Painting</h2>
+</div>
+<section>
+    <div class="card">
+    <img src="{% static 'p_motherslove.jpg' %}">
+    <div class="container">
+    <h3>Artist:</h3><p>Oyedale Abiodun Oyewumi</p>
+    <h3>Title:</h3><p>undying Love</p>
+    <h3>Date: </h3><p>2022</p>
+    <h3>Size:</h3><p>60 x 48 inches</p>
+    <h3>Story: </h3><p>A mother's love for her child is like nothing else in the world. It knows no law, no pity. it dares all things and crushes down remoreselessly all that stands in its path.</p>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="card">
+    <img src="{% static 'p_festival.jpeg' %}">
+    <div class="container">
+    <h3>Artist:</h3><p>Popoola Fikayo Olamide</p>
+    <h3>Title:</h3><p>festival</p>
+    <h3>Date: </h3><p>2022</p>
+    <h3>Size:</h3><p>3 by 4ft</p>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="card">
+    <img src="{% static 'p_similingperson.jpg' %}">
+    <div class="container">
+    <h3>Artist:</h3><p>Patience Adekunle</p>
+    <h3>Title:</h3><p>the unco Essence</p>
+    <h3>Date: </h3><p>2022</p>
+    <h3>Size:</h3><p>60 x 66</p>
+</section>
+<section>
+    <div class="card">
+    <img src="{% static 'p_iyaniwura.jpg' %}">
+    <div class="container">
+    <h3>Artist:</h3><p>Akintunde Emmanuel (Tbeny)</p>
+    <h3>Title:</h3><p>Iya Ni Wura</p>
+    <h3>Date: </h3><p>2020</p>
+    <h3>Size:</h3><p>60 x 66</p>
+    <h3>Technique:</h3><p>Impasto</p>
+    <h3>Medium:</h3><p>oil on canvas</p>
+</div>
+</div>
+</section>
+{% endblock %}
